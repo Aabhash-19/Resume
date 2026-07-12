@@ -1,0 +1,200 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+% Resume adapted to the provided Overleaf LaTeX format
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[top=0.32in,bottom=0.32in,left=0.42in,right=0.42in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=1em,itemsep=-1pt,topsep=-1pt,parsep=0pt,partopsep=0pt}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2pt}{1pt}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\usepackage{fontawesome5}
+
+% Fixed-width right column labels for perfectly aligned scores
+\newcommand{\scorebox}[1]{\makebox[3.2cm][r]{\textbf{Score: #1}}}
+\newcommand{\gpabox}[1]{\makebox[3.2cm][r]{\textbf{GPA: #1}}}
+
+% Compact entry environments
+\newenvironment{jobshort}[2]
+{
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    \end{tabularx}
+}
+{}
+
+\newenvironment{joblong}[2]
+{
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\
+    \end{tabularx}
+    \vspace{-7pt}
+    \begin{itemize}[leftmargin=1em,itemsep=-1pt,topsep=-1pt,parsep=0pt,label=--]
+}
+{
+    \end{itemize}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+% TITLE
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Large{Aabhash Rahut}\\[2pt]
+\href{https://github.com/Aabhash-19}{\raisebox{-0.05\height}\faGithub\ GitHub} \ $|$ \ 
+\href{https://www.linkedin.com/in/aabhash-rahut-395589202/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \ 
+\href{mailto:aabhashrahut00@gmail.com}{\raisebox{-0.05\height}\faEnvelope\ aabhashrahut00@gmail.com} \ $|$ \ 
+\href{tel:+916355710164}{\raisebox{-0.05\height}\faMobile\ +91 6355710164}\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% PROFESSIONAL SUMMARY
+%----------------------------------------------------------------------------------------
+\section{Professional Summary}
+AI/ML-focused Computer Science undergraduate skilled in Python, SQL, Machine Learning, Deep Learning, Computer Vision, and Full-Stack development. Experienced in building Flask-based AI applications, recommendation systems, image classification models, and optimized PyTorch workflows for Apple Silicon.
+
+%----------------------------------------------------------------------------------------
+% TECHNICAL SKILLS
+%----------------------------------------------------------------------------------------
+\section{Technical Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Languages & \normalsize{Python, SQL}\\
+Frameworks \& Libraries & \normalsize{Pandas, NumPy, Scikit-Learn, Matplotlib, TensorFlow, Streamlit, Flask}\\
+Tools & \normalsize{MS Word, PowerPoint, MySQL}\\
+Platforms & \normalsize{Jupyter Notebook, Visual Studio Code, PyCharm}\\
+Soft Skills & \normalsize{Documentation Work, Rapport Building, Excellent Communication}\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{@{}p{0.82\linewidth}r@{}}
+
+$\bullet$ \hspace{2pt}\textbf{BookLens - AI Book Discovery Platform}
+&
+\href{https://github.com/Aabhash-19/BookLens}{REPO}\\[-2pt]
+
+\hspace{10pt}\textit{Next.js, FastAPI, Python, PostgreSQL, OpenCV, SentenceTransformers}
+&
+\textit{July 2026}\\[-1pt]
+
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+Developed a full-stack AI-powered book discovery platform using Next.js, FastAPI, Python, and PostgreSQL, enabling users to scan book covers or ISBN barcodes to automatically retrieve metadata and organize their personal libraries. Integrated computer vision, OCR, and semantic recommendation models using OpenCV, PyTesseract, PyZbar, and HuggingFace SentenceTransformers to deliver intelligent book identification and personalized recommendations based on user preferences and reading history.
+}
+\\[4pt]
+
+$\bullet$ \hspace{2pt}\textbf{Divya Drishti - Visually Impaired AI Assistant}
+&
+\href{https://github.com/Aabhash-19/DivyaDrishti}{REPO}\\[-2pt]
+
+\hspace{10pt}\textit{Flask, Python, OpenCV, TensorFlow, Text-to-Speech}
+&
+\textit{March 2026}\\[-1pt]
+
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+Developed an AI-powered assistive application using Flask, Python, OpenCV, and TensorFlow, enabling visually impaired users to identify objects and receive real-time audio guidance. Integrated computer vision, image preprocessing, and Text-to-Speech (TTS) technologies to perform object detection and text recognition, enhancing accessibility and user interaction.
+}
+\\[4pt]
+
+$\bullet$ \hspace{2pt}\textbf{Restaurant Recommendation Model}
+&
+\href{https://github.com/Aabhash-19/Restaurant-recommendation-model}{REPO}\\[-2pt]
+
+\hspace{10pt}\textit{Flask, HTML, CSS, JavaScript, Pandas, NLTK}
+&
+\textit{November 2025}\\[-1pt]
+
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+Developed a full-stack Flask web application with an interactive frontend using HTML, CSS, and JavaScript, enabling users to filter recommendations by cost range, minimum rating, and favourite restaurants. Performed end-to-end data preprocessing and feature engineering on a Zomato dataset of Bangalore using Pandas and NLTK, creating optimized features to improve model relevance and user filtering.
+}
+\\[4pt]
+
+$\bullet$ \hspace{2pt}\textbf{Plantix - AI Plant Health Dashboard}
+&
+\href{https://github.com/Aabhash-19/Plantix}{REPO} \textbar\ 
+\href{https://plantix.streamlit.app}{LIVE}\\[-2pt]
+
+\hspace{10pt}\textit{Streamlit, Python, Google Gemini API, TensorFlow, CNN}
+&
+\textit{July 2026}\\[-1pt]
+
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+Developed an AI-powered plant disease detection web application using Streamlit, Python, and the Google Gemini Vision API, enabling users to upload plant leaf images and receive instant disease diagnosis, treatment recommendations, and crop health assessments. Integrated computer vision and custom CNN-based deep learning models in TensorFlow to classify plant diseases, while providing a searchable disease encyclopedia and diagnosis history through a modern, responsive dashboard.
+}
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% RESEARCH
+%----------------------------------------------------------------------------------------
+\section{Research}
+
+\begin{tabularx}{\linewidth}{@{}p{0.82\linewidth}r@{}}
+
+$\bullet$ \hspace{2pt}\textbf{MobileNetV4 Optimization Apple Silicon}
+&
+\href{https://github.com/Aabhash-19/MobileNetV4-AppleSilicon-Optimization}{REPO}\\[-2pt]
+
+\hspace{10pt}\textit{PyTorch, MobileNetV4, CIFAR-10, Apple Silicon MPS}
+&
+\textit{October 2025}\\[-1pt]
+
+\multicolumn{2}{@{}p{\linewidth}@{}}{
+Optimized a PyTorch implementation of MobileNetV4, achieving a 13.19\% absolute accuracy boost from 70.09\% to 83.28\% on CIFAR-10 by integrating Squeeze-and-Excitation blocks, Stochastic Depth regularization, and SiLU activation functions. Accelerated training time by 3.3x through strategic optimization for Apple Silicon GPUs via PyTorch's MPS backend.
+}
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{VIT Bhopal University}, Sehore, MP & Sept 2023 -- Jan 2027 \\
+Bachelor of Technology -- Computer Science \& Engineering (AI/ML) & \gpabox{8.19} \\[3pt]
+
+\textbf{Griffins International School (GIS)}, Kharagpur, WB & April 2023 \\
+Senior School Certification Examination (Class 12 Boards) & \scorebox{87.6\%} \\[3pt]
+
+\textbf{Delhi Public School (DPSJ)}, Jamnagar, Gujarat & April 2021 \\
+Secondary School Certification Examination (Class 10 Boards) & \scorebox{94\%} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section{Certifications}
+
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+
+\textbf{Microsoft Azure Data Fundamentals (DP-900)} & \scorebox{940/1000} \\
+\multicolumn{2}{@{}p{\linewidth}@{}}{\textit{Microsoft.} Covered Azure data services, relational and non-relational databases, OLTP/OLAP workloads, Azure SQL Database, Cosmos DB, and Synapse Analytics.} \\[3pt]
+
+\textbf{Cloud Computing -- NPTEL (IIT Kharagpur)} & \scorebox{77\%} \\
+\multicolumn{2}{@{}p{\linewidth}@{}}{\textit{Elite + Silver Certification.} Studied cloud service models, deployment models, virtualization, containerization, cloud storage, databases, security, and cost optimization.} \\[3pt]
+
+\textbf{Introduction to Internet of Things (IoT) -- NPTEL (IIT Kharagpur)} & \scorebox{88\%} \\
+\multicolumn{2}{@{}p{\linewidth}@{}}{\textit{Elite + Silver Certification | Top 5\% of certified candidates.} Covered IoT architecture, sensors, actuators, embedded systems, communication protocols, cloud-enabled IoT applications, data acquisition, and smart system design.} \\
+
+\end{tabularx}
+
+\end{document}
